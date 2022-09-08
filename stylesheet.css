@@ -1,0 +1,14 @@
+/* a */
+.container:nth-of-type(5) {
+    color: aquamarine;
+}
+
+/* b */
+li.mango {
+    color: red;
+}
+
+/* c */
+[type=green] {
+    color: green;
+}

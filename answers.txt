@@ -1,0 +1,51 @@
+1.
+I think that in this specific function ,
+It is not possible to improve performance, because the calls to the function depend on each other. The function uses the 2 calls - (connects the pair of numbers)
+If the calls do not depend on each other, it would be possible to remove await and save time.
+
+2.
+The functions are written in main .
+3.
+The answer was written in the regex.ts file .
+4.
+The function works asynchronously and a situation can arise where the second for happens before the first for and then the array is not yet full
+Therefore, in my opinion The change will be that we wrap the first for in a function with await and then the second for will wait for the first
+ the change will be, the word await should be added before the call to the server
+Because the second for depends on the first.
+
+async function getNumberFromServer(): Promise<number> {
+    //some api call to return a number from a remote server
+}
+
+async function run1000(): Promise<void> {
+const promises: Promise<number>[] = [];
+
+await function overNumbers (){
+    for(let i=0; i< 1000;i++) {
+        promises.push(getNumberFromServer());
+}
+}
+
+for(const p of promises){
+   await p
+}
+}
+
+5. 
+The function was written in the middleware.ts file .
+6.
+In stylesheet.css file
+7.
+a) The program will show in the form of a loop that goes through all the id that I want to receive from the server and each time the id that will be sent to the server will change .
+
+c)The program will work in the form of a loop that goes through an array of users and in each interaction the function will activate the :
+       POST /users - Create a new user .
+     The function will create multiple users and not a single user.
+8.
+Access tokens vs. refresh tokens:
+An access token gives permission to access protected resources and to make secured calls to an api server An access token can be exposed to malicious users therefore, it is important that it should be secured. as part of security strategies is its short life span
+And here comes the role of the refresh token which is for security purposes.
+A refresh token is an authentication object that allows you to receive a new access token without asking the user to log in again...
+Therefore, its lifespan will be longer than the access token
+
+9. 
